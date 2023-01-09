@@ -1,0 +1,148 @@
+.appWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: gray;
+  flex-direction: column;
+}
+
+.main {
+  width: 70%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: #fff;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: teal;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.navbar h4 {
+  font-weight: bold;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.navbar button {
+  padding: 10px 20px;
+  text-align: center;
+  color: teal;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.gallery {
+  width: 100%;
+  /* background-color: blue; */
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px !important;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.galleryPost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  height: "max-content";
+  border: 1px solid gray;
+}
+
+.galleryPost .conntent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.galleryPost img {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  position: sticky;
+  bottom: 0;
+  gap: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+form label {
+  font-weight: bold;
+}
+
+.form form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form form .formGroup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+form input {
+  padding: 10px 15px;
+  width: 70%;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: teal;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+}
+
+@media screen and (max-width: 920px) {
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery {
+    flex-direction: column !important;
+    height: auto;
+  }
+
+  .galleryPost {
+    width: 100%;
+  }
+}
